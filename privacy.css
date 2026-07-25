@@ -1,0 +1,125 @@
+:root {
+    --green-dark: #7AB82A;
+    --pitch: #1B4332;
+    --dark: #1A1C20
+    --chalk: #FAFAF6;
+    --chalk-dim: #F1EFE7;
+    --gold: #B8860B;
+    --ink: #1C1C1A;
+    --ink-soft: #5C5C56;
+    --line: #DDD8CB;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--chalk);
+    color: var(--ink);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+.field {
+    background: var(--green-dark);
+    color: var(--dark);
+    padding: 56px 24px 60px;
+    text-align: center;
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: clamp(32px, 5vw, 40px);
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+}
+
+.intro-note {
+    background: var(--chalk-dim);
+    border-left: 3px solid var(--gold);
+    padding: 18px 22px;
+    margin-bottom: 44px;
+    font-size: 14.5px;
+    color: var(--ink-soft);
+}
+
+.article {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.article:first-of-type {
+    padding-top: 0;
+}
+
+.article:last-of-type {
+    border-bottom: none;
+}
+
+.article h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0 0 12px;
+    color: var(--pitch);
+}
+
+.article p,
+.article ul {
+    margin: 0 0 10px;
+    font-size: 15px;
+}
+
+.article ul {
+    padding-left: 20px;
+}
+
+.article li {
+    margin-bottom: 6px;
+}
+
+.article p:last-child,
+.article ul:last-child {
+    margin-bottom: 0;
+}
+
+.contact-block dl {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 6px 16px;
+    margin: 8px 0 0;
+    font-size: 15px;
+}
+
+.contact-block dt {
+    color: var(--ink-soft);
+    font-weight: 500;
+}
+
+.contact-block dd {
+    margin: 0;
+}
+
+.contact-block dd a {
+    color: var(--pitch);
+    text-decoration: none;
+}
+
+.footer-meta {
+    margin-top: 48px;
+    text-align: center;
+    font-size: 13px;
+    color: var(--ink-soft);
+}
